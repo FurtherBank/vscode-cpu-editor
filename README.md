@@ -10,6 +10,7 @@ Can use [cpu-json-editor](https://github.com/FurtherBank/json-schemaeditor-antd)
 
 - Can auto generate json schema file of your json by [quicktype](https://github.com/quicktype/quicktype).
 
+> If you encounter any problems or bugs when using the editor, you can go to the [issues](https://github.com/FurtherBank/vscode-cpu-editor/issues) to give feedback. 
 ## Requirements
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.

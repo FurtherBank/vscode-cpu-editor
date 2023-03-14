@@ -1,6 +1,7 @@
 {
   "name": "cpu-json-editor",
   "displayName": "cpu-json-editor",
+  "publisher": "FurtherBank",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -10,11 +11,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCustomEditor:cpu-json-editor.JsonEditor",
-    "onCommand:cpu-json-editor.HelloWorld",
-    "onCommand:cpu-json-editor.openMyWebview",
-    "onWebviewPanel:MyWebview",
-    "onCommand:cpu-json-editor.LogFile"
+    "onCustomEditor:cpu-json-editor.JsonEditor"
   ],
   "main": "./out/extension.js",
   "contributes": {
