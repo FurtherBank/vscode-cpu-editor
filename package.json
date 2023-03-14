@@ -4,6 +4,7 @@
   "publisher": "FurtherBank",
   "description": "",
   "version": "0.0.1",
+  "repository": "https://github.com/FurtherBank/vscode-cpu-editor",
   "engines": {
     "vscode": "^1.71.0"
   },
@@ -26,11 +27,9 @@
         ]
       }
     ],
-    "commands": [
-    ],
+    "commands": [],
     "menus": {
-      "explorer/context": [
-      ]
+      "explorer/context": []
     }
   },
   "scripts": {
