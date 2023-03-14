@@ -1,21 +1,17 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import HelloWorld from './command/hello-world';
-import LogFile from './command/log-file';
 import { pluginName } from './constrants/project';
 import Command from './core/command/command';
 import { WebviewManager } from './core/webview/manager';
 import { loadWebviewHtml } from './core/helper/webview/loadWebviewHtml';
-import { IWebview } from './core/helper/webview/IWebview';
-import { iview } from './webview/panel';
 import { getWebviewPathInfo } from './core/helper/webview/getWebviewPathInfo';
-import { ITextEditor, ITextEditorWebview } from './core/helper/editor/text/ITextEditor';
+import { ITextEditor } from './core/helper/editor/text/ITextEditor';
 import { JsonEditor } from './webview/json-editor';
 
 // just fill this array by your commands, then will automatically register
 // note: don't forget to fill the command in package.json
-const commands: typeof Command[] = [HelloWorld, LogFile];
+const commands: typeof Command[] = [];
 
 /**
  * 按照`viewType: webview`的方式，填入插件使用的 webview 即可。
@@ -24,9 +20,7 @@ const commands: typeof Command[] = [HelloWorld, LogFile];
  * 1. 如果 webview 是通过 customEditor 的方式使用，请不要在这里填入；两种用途的 webview 注册逻辑不同
  * 2. 键名和`webview.viewType`需要完全一致。
  */
-WebviewManager.webviews = {
-  MyWebview: iview,
-};
+WebviewManager.webviews = {};
 
 const customTextEditorWebviews: Record<string, ITextEditor> = {
   JsonEditor: JsonEditor,

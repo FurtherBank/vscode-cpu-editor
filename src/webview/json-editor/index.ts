@@ -1,7 +1,6 @@
 import * as vscode from 'vscode';
 import * as fs from 'fs';
 import * as path from 'path';
-import { IWebview } from '../../core/helper/webview/IWebview';
 import { ITextEditorWebview } from '../../core/helper/editor/text/ITextEditor';
 import debounce from 'lodash/debounce';
 import { resetSchema } from './quicktype';

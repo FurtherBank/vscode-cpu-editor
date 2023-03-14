@@ -1,6 +1,6 @@
 {
-  "name": "cpu-ext-trial",
-  "displayName": "cpu-ext-trial",
+  "name": "cpu-json-editor",
+  "displayName": "cpu-json-editor",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -10,18 +10,18 @@
     "Other"
   ],
   "activationEvents": [
-    "onCustomEditor:cpu-ext-trial.JsonEditor",
-    "onCommand:cpu-ext-trial.HelloWorld",
-    "onCommand:cpu-ext-trial.openMyWebview",
+    "onCustomEditor:cpu-json-editor.JsonEditor",
+    "onCommand:cpu-json-editor.HelloWorld",
+    "onCommand:cpu-json-editor.openMyWebview",
     "onWebviewPanel:MyWebview",
-    "onCommand:cpu-ext-trial.LogFile"
+    "onCommand:cpu-json-editor.LogFile"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "customEditors": [
       {
-        "viewType": "cpu-ext-trial.JsonEditor",
-        "displayName": "Cat Scratch",
+        "viewType": "cpu-json-editor.JsonEditor",
+        "displayName": "Cpu Json Editor",
         "selector": [
           {
             "filenamePattern": "*.json"
@@ -30,31 +30,9 @@
       }
     ],
     "commands": [
-      {
-        "command": "cpu-ext-trial.openMyWebview",
-        "title": "📖Open Panel"
-      },
-      {
-        "command": "cpu-ext-trial.HelloWorld",
-        "title": "👋Hello World"
-      },
-      {
-        "command": "cpu-ext-trial.LogFile",
-        "title": "📄Log File"
-      }
     ],
     "menus": {
       "explorer/context": [
-        {
-          "when": "resourceLangId == json",
-          "command": "cpu-ext-trial.LogFile",
-          "group": "1_modification"
-        },
-        {
-          "when": "resourceLangId == json",
-          "command": "cpu-ext-trial.openMyWebview",
-          "group": "1_modification"
-        }
       ]
     }
   },
