@@ -1,5 +1,3 @@
-import * as fs from 'fs';
-
 import { InputData, jsonInputForTargetLanguage, quicktype, TargetLanguage } from "quicktype/dist/quicktype-core"
 
 export async function quicktypeJSON (targetLanguage: string | TargetLanguage, typeName: string, jsonString: string) {

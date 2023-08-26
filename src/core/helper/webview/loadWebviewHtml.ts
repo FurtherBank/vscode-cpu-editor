@@ -1,7 +1,5 @@
 import * as vscode from 'vscode';
 import * as fs from 'fs';
-import * as path from 'path';
-import { IWebview } from './IWebview';
 import { IWebviewPathInfo } from './getWebviewPathInfo';
 
 const initJS = `

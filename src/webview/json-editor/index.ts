@@ -47,7 +47,7 @@ export const JsonEditor = (
         // localResourceRoots: [vscode.Uri.file(path.join(extensionPath, 'web-source/dist'))],
       };
     },
-    htmlPath: 'webview-demo/build',
+    htmlPath: 'cpu-json-editor/build',
     onDidReceiveMessage: async function (message: IJsonEditorMessage | string) {
       // message 可能为 string | IJsonEditorMessage，前者纯粹修改文档，后者各有用处
       console.log(`vscode 收到消息：`, message);

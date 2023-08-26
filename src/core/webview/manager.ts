@@ -1,4 +1,3 @@
-import * as path from 'path';
 import * as vscode from 'vscode';
 import { pluginName } from '../../constrants/project';
 import { getWebviewPathInfo } from '../helper/webview/getWebviewPathInfo';
