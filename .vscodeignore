@@ -9,5 +9,5 @@ vsc-extension-quickstart.md
 **/*.map
 **/*.ts
 **/node_modules/**
-webview-repos/**/*.*
+webview-repos/**
 !webview-repos/*/build/**
